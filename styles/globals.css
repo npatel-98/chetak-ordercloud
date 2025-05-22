@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+}
+
+select,
+input[type="phone"],
+input[type="date"],
+input[type="datetime"],
+input[type="number"],
+input[type="text"],
+input[type="password"] {
+  display: block;
+}
+/* li{
+  background-color: blueviolet;
+} */
+.ctaButton{
+  background-color: #E5E7EB; /* Replace with the corresponding color value for bg-stone-100 */
+  font-family: 'Your Custom Font', sans-serif; /* Replace with the font family for font-cust */
+  border-width: 2px;
+  border-color: #9CA3AF;
+   /* Replace with the corresponding color value for border-stone-400 */
+  color: #000000; /* Replace with the corresponding color value for text-black */
+  /* padding-left: 12px;
+  padding-right: 12px; */
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 100%;
+  /* margin-top: 8px; */
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.ctaButton:hover,
+.ctaButton:focus {
+  border-width: 2px;
+  color: #000000; /* Replace with the corresponding color value for text-black */
+  background-color: #D1D5DB; /* Replace with the corresponding color value for bg-stone-200 */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  transition-timing-function: ease-in;
+}
+
+.ctaButton:hover,
+.ctaButton:focus,
+.ctaButton:hover,
+.ctaButton:focus {
+  box-shadow: 0px 2px 4px 0px rgba(163, 163, 163, 0.5); /* Replace with the corresponding color value for shadow-stone-500 */
+}
+
+.cartWrapper .quantityWrapper{
+  display: flex;
+}
+.cartWrapper .quantityWrapper input{
+  @media (min) {
+    
+  }
+  margin-left: 4rem;
+}
+.productDetails .ctaButton{
+  width: fit-content;
+  padding: 6px 14px;
+}
+
+.cartActionWrapper button, .cartActionWrapper a{
+  font-weight: 700;
+  font-size: large;
+  color: #44403c; /* Red color */
+}
+
+.cartActionWrapper button:hover{
+  color: #dc2626; /* Red color */
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+}
+.cartActionWrapper a:hover{
+  color: #16a34a; /* Red color */
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+}
+
+.productTitle p{
+  font-weight: 700;
+  font-size: large;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.addressBook input{
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.addressBook label{
+  margin-bottom: 8px;
+}
+
+.addressBook button{
+  margin: 12px 8px 0;
+}
+
+.addressBook button:hover{
+  /* color:#16a34a */
+}
+
+@keyframes scaleAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
